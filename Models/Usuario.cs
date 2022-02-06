@@ -13,5 +13,10 @@ namespace AgenciaCronosAPI.Models
         public string? Papel { get; set; }
         [Column("Contato")]
         public string? Contato { get; set; }
+
+        [Column("EquipeId")]
+        public int? EquipeId { get; set; }
+
+
     }
 }

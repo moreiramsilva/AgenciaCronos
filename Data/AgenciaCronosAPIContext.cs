@@ -1,9 +1,4 @@
-﻿#nullable disable
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using AgenciaCronosAPI.Models;
 
 namespace AgenciaCronosAPI.Data
@@ -15,9 +10,9 @@ namespace AgenciaCronosAPI.Data
         {
         }
 
-        public DbSet<AgenciaCronosAPI.Models.Usuario> Usuario { get; set; }
-        public DbSet<AgenciaCronosAPI.Models.Post> Post { get; set; }
-        public DbSet<AgenciaCronosAPI.Models.IntegrantesEquipe> IntegrantesEquipe { get; set; }
-        public DbSet<AgenciaCronosAPI.Models.Servicos> Servicos { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Post> Post { get; set; }
+        public DbSet<IntegrantesEquipe> IntegrantesEquipe { get; set; }
+        public DbSet<Servicos> Servicos { get; set; }
     }
 }

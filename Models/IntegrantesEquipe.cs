@@ -12,7 +12,8 @@ namespace AgenciaCronosAPI.Models
         [Column("TituloEquipe")]
         [MaxLength(50)]
         public string? TituloEquipe { get; set; }
-        
-        public List <Usuario>? ListaUsuarios { get; set; }
+
+        [Column("ServicosId")]
+        public int? ServicosId { get; set; }
     }
 }

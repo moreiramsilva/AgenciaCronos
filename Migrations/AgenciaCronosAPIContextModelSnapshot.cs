@@ -26,6 +26,10 @@ namespace AgenciaCronosAPI.Migrations
                         .HasColumnType("int")
                         .HasColumnName("Id");
 
+                    b.Property<int?>("ServicosId")
+                        .HasColumnType("int")
+                        .HasColumnName("ServicosId");
+
                     b.Property<string>("TituloEquipe")
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)")
@@ -44,7 +48,8 @@ namespace AgenciaCronosAPI.Migrations
                         .HasColumnName("Id");
 
                     b.Property<int>("CriadorId")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("CriadorId");
 
                     b.Property<DateTime?>("DataPublicacao")
                         .HasColumnType("datetime(6)")
@@ -61,8 +66,6 @@ namespace AgenciaCronosAPI.Migrations
                         .HasColumnName("TituloPost");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CriadorId");
 
                     b.ToTable("Post");
                 });
@@ -108,8 +111,9 @@ namespace AgenciaCronosAPI.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("Contato");
 
-                    b.Property<int?>("IntegrantesEquipeId")
-                        .HasColumnType("int");
+                    b.Property<int?>("EquipeId")
+                        .HasColumnType("int")
+                        .HasColumnName("EquipeId");
 
                     b.Property<string>("Nome")
                         .HasColumnType("longtext")
@@ -121,32 +125,7 @@ namespace AgenciaCronosAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IntegrantesEquipeId");
-
                     b.ToTable("Usuario");
-                });
-
-            modelBuilder.Entity("AgenciaCronosAPI.Models.Post", b =>
-                {
-                    b.HasOne("AgenciaCronosAPI.Models.Usuario", "Criador")
-                        .WithMany()
-                        .HasForeignKey("CriadorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Criador");
-                });
-
-            modelBuilder.Entity("AgenciaCronosAPI.Models.Usuario", b =>
-                {
-                    b.HasOne("AgenciaCronosAPI.Models.IntegrantesEquipe", null)
-                        .WithMany("ListaUsuarios")
-                        .HasForeignKey("IntegrantesEquipeId");
-                });
-
-            modelBuilder.Entity("AgenciaCronosAPI.Models.IntegrantesEquipe", b =>
-                {
-                    b.Navigation("ListaUsuarios");
                 });
 #pragma warning restore 612, 618
         }

@@ -20,7 +20,7 @@ namespace AgenciaCronosAPI.Models
         [Column("DataPublicacao")]
         public DateTime? DataPublicacao { get; set; }
         
-        [Column("Criador")]
-        public Usuario Criador { get; set; }
+        [Column("CriadorId")]
+        public int CriadorId { get; set; }
     }
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5dbafb10-3154-476b-b081-56861c924cde": {
+      "ProjectGuid": "5dbafb10-3154-476b-b081-56861c924cde",
+      "DisplayName": "AgenciaCronosAPI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgenciaCronosAPI", "AgenciaCronosAPI.csproj", "{5DBAFB10-3154-476B-B081-56861C924CDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DBAFB10-3154-476B-B081-56861C924CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBAFB10-3154-476B-B081-56861C924CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBAFB10-3154-476B-B081-56861C924CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBAFB10-3154-476B-B081-56861C924CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF5F9B63-F1C9-4810-9271-00621F383D34}
+	EndGlobalSection
+EndGlobal

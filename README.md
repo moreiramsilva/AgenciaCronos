@@ -1,29 +1,27 @@
-# AgenciaCronos
-#Tecnologias:
-#.Net Core 6
-# MySql **OBS: (Pode-se usar o comando 'Update-Database -Context AgenciaCronosAPIContext' para a criação do BD 
-#	ou importar os scripts da pasta ScriptsDB)
-#
-#
-#
-#Pacotes instalados:
-#Install-Package Microsoft.EntityFrameworkCore
-#Install-Package Microsoft.EntityFrameworkCore.Tools
-#Install-Package Pomelo.EntityFrameworkCore.MySql
-#Install-Package Microsoft.EntityFrameworkCore.Design
-#
-#Comandos do Migration executados para criação do banco
-#Add-Migration Alteracao -Context AgenciaCronosAPIContext
-#Update-Database -Context AgenciaCronosAPIContext
-#
-#Script BD se encontra na pasta
-#
-#
-#DADOS PARA TESTE
-#
-#========================================================================================================
-#API SERVIÇO
-#========================================================================================================
+#AgenciaCronos
+##Tecnologias:
+.Net Core 6
+MySql **OBS: (Pode-se usar o comando 'Update-Database -Context AgenciaCronosAPIContext' para a criação do BD ou importar os scripts da pasta ScriptsDB)
+
+
+##Pacotes instalados:
+Install-Package Microsoft.EntityFrameworkCore
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Pomelo.EntityFrameworkCore.MySql
+Install-Package Microsoft.EntityFrameworkCore.Design
+
+
+##Comandos do Migration executados para criação do banco
+Add-Migration Alteracao -Context AgenciaCronosAPIContext
+Update-Database -Context AgenciaCronosAPIContext
+
+
+
+##DADOS PARA TESTE
+
+=============================================
+API SERVIÇO
+=============================================
 GET: https://localhost:7223/api/Servicos
 POST: https://localhost:7223/api/Servicos
 {
@@ -43,9 +41,9 @@ PUT: https://localhost:7223/api/Servicos/1
 }
 DELETE: https://localhost:7223/api/Servicos/1
 
-#========================================================================================================
-#API EQUIPES
-#========================================================================================================
+========================================
+API EQUIPES
+========================================
 GET: https://localhost:7223/api/IntegrantesEquipes
 POST: https://localhost:7223/api/IntegrantesEquipes
 {
@@ -60,9 +58,9 @@ GET: https://localhost:7223/api/IntegrantesEquipes/3
 }
 DELETE: https://localhost:7223/api/IntegrantesEquipes/3
 
-#========================================================================================================
-#API USUARIOS
-#========================================================================================================
+========================================
+API USUARIOS
+========================================
 GET: api/Usuarios
 GET: api/Usuarios/1
 POST:
@@ -82,9 +80,9 @@ PUT:
 }
 DELETE: api/Usuarios/1
 
-#========================================================================================================
-#API USUARIOS
-#========================================================================================================
+========================================
+API USUARIOS
+========================================
 GET: https://localhost:7223/api/Usuarios
 POST:  https://localhost:7223/api/Usuarios
 {
@@ -103,9 +101,9 @@ PUT:  https://localhost:7223/api/Usuarios/1
   "equipeId": null
 }
 DELETE:  https://localhost:7223/api/Usuarios/1
-#========================================================================================================
-#API POST
-#========================================================================================================
+========================================
+API POST
+========================================
 GET:https://localhost:7223/api/Posts
 POST: https://localhost:7223/api/Posts/
 {

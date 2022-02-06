@@ -10,6 +10,6 @@
 #Install-Package Pomelo.EntityFrameworkCore.MySql
 #
 #Comandos do Migration executados para criação do banco
-#Add-Migration Criacao-Inicial -Context Contexto
-#Update-Database -Context Contexto
+#Add-Migration Criacao-Inicial -Context AgenciaCronosAPIContext
+#Update-Database -Context AgenciaCronosAPIContext
 

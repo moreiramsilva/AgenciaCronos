@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebApplicationTeste.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,6 +13,12 @@ builder.Services.AddSwaggerGen( c => {
 });
 
 var app = builder.Build();
+
+builder.Services.AddDbContext<AgenciaCronosAPIContext>(options =>
+
+    options.UseMySql(builder.Configuration.GetConnectionString("WebApplicationTesteContext"),
+        Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.28-mysql")));
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
